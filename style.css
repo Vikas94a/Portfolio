@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  position: relative;
+ 
 }
 
 .header-logo {
@@ -111,13 +112,23 @@ margin: 4px;
   color: #66fcf1;
 }
 
+.about-skill-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+
 /* about section style  */
 .about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 22px;
+  padding-top: 45px; 
+  height: 43vh;
 }
 
 /* my skils heading style  */
@@ -132,7 +143,7 @@ margin: 4px;
 
 .about-description {
   color: #fffbfb;
-  width: 80%;
+  max-width: 70%;
   letter-spacing: 2px;
   margin-bottom: 9px;
   font-family: "Poppins", serif;
@@ -140,12 +151,20 @@ margin: 4px;
 
 .skill-heading {
   font-size: 4rem;
-  margin-bottom: 22px;
+  
 }
 
 .span {
   color: #66fcf1;
 }
+
+/* .skill-card-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+} */
 
 
 /* skill container  */
@@ -153,11 +172,15 @@ margin: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
   align-items: center;
   padding: 12px;
-  gap: 1;
+  gap: 15px;
   flex-wrap: wrap;
   font-family: "DM Serif Text", serif;
+  min-height: 15vh;
+  margin-top: 88px;
+  max-width: 75%;
 }
 
 .skill-card {
@@ -168,7 +191,6 @@ margin: 4px;
   align-items: center;
   background-color: #2c3e50;
   height: 80px;
-  margin-bottom: 18px;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
@@ -181,11 +203,11 @@ margin: 4px;
 
 .logo-container {
   display: flex;
-  width: 100%;
   height: auto;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  gap: 25px;
 }
 
 
@@ -211,7 +233,8 @@ margin: 4px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
+  min-height: 40vh;
+  margin-top: 79px;
 }
 
 .project-card {
@@ -238,7 +261,7 @@ margin: 4px;
   width: 80%;
   flex-wrap: wrap;
   gap: 18px;
-  margin: 52px 0px;
+  margin-top: 55px;
 }
 
 .title {
@@ -343,12 +366,17 @@ background-image: url(Project-Screenshot/Travell-planner.png);
   /* filter: invert(); */
 }
 
+#kontakt{
+margin-top: 20px;
+}
+
 /* footer style  */
 .footer-container {
   margin-top: 23px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-invite {
@@ -395,7 +423,7 @@ background-image: url(Project-Screenshot/Travell-planner.png);
 
 .email-container {
   display: flex;
-  width: 100%;
+
   justify-content: center;
   align-items: center;
   padding: 22px;
@@ -412,9 +440,12 @@ background-image: url(Project-Screenshot/Travell-planner.png);
   text-decoration: none;
 }
 
+.git-link{
+  cursor: pointer;
+}
 
 /* responsive design for tablet  */
-@media only screen and (max-width: 1122px ) {
+@media only screen and (max-width: 1032px ) {
 
 .nav-list{
   flex-direction: column;
@@ -463,14 +494,12 @@ border-bottom: 1px solid whitesmoke;
   padding: 7px;
   font-size: 1.1rem;
 }
- 
-
 
 }
 
 
 /* responsive design for mobile  */
-@media only screen and (max-width: 633px ) {
+@media only screen and (max-width: 672px ) {
   .hero-greeting,
   .hero-intro,.hero-name {
    font-size: 1.3rem;
@@ -487,16 +516,26 @@ border-bottom: 1px solid whitesmoke;
     font-size: 2.5rem;
    }
 
+   /* .projects-section{
+    margin-top: 33rem;
+   } */
+/* 
+   #kontakt{
+    margin-top: 33rem;
+   } */
    .footer-container{
     padding: 10px;
    }
 
    .cta-btn{
-    padding: 3px;
+    padding: 9px;
+    width: 130px;
     font-size: 0.8rem;
   }
    
-
+  .footer-container{
+    justify-content: center;
+  }
 
  }
 
