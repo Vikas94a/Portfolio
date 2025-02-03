@@ -276,7 +276,7 @@ margin-bottom: 8px;
   border: 1px solid whitesmoke;
   box-shadow: 0 1px 6px #0df5da;
  pointer-events: none;
-  position: fixed;
+  position: absolute;
   
 }
 
@@ -365,6 +365,7 @@ background-image: url(Project-Screenshot/Travell-planner.png);
   border-radius: 50px;
   color: black;
   font-weight: 700;
+  text-align: center;
 }
 
 .footer-logo {
@@ -486,6 +487,9 @@ border-bottom: 1px solid whitesmoke;
     font-size: 2.5rem;
    }
 
+   .footer-container{
+    padding: 10px;
+   }
 
    .cta-btn{
     padding: 3px;
