@@ -497,6 +497,7 @@ border-bottom: 1px solid whitesmoke;
  .footer-container{
   margin-top: 87px;
   flex-direction: column;
+  padding: 12px;
  }
 
  .footer-invite{
