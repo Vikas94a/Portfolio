@@ -264,6 +264,15 @@ margin: 4px;
   margin-top: 55px;
 }
 
+.project-title{
+  font-family: "DM Serif Text", serif;
+}
+
+.project-discription{
+  margin-top: 4px;
+  font-style:  "Poppins", serif;
+}
+
 .title {
   margin-left: 7px;
   color: white;
@@ -368,6 +377,11 @@ background-image: url(Project-Screenshot/Travell-planner.png);
 
 #kontakt{
 margin-top: 20px;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
 /* footer style  */
@@ -447,6 +461,11 @@ margin-top: 20px;
 /* responsive design for tablet  */
 @media only screen and (max-width: 1032px ) {
 
+  #circle-cursor{
+    display: none;
+  }
+
+
 .nav-list{
   flex-direction: column;
   position: absolute;
@@ -480,6 +499,7 @@ border-bottom: 1px solid whitesmoke;
 
 
 
+
  .profile-img{
   width: 350px;
   height: 490px;
@@ -498,6 +518,7 @@ border-bottom: 1px solid whitesmoke;
   margin-top: 87px;
   flex-direction: column;
   padding: 12px;
+ 
  }
 
  .footer-invite{
